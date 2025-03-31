@@ -228,7 +228,6 @@ a i {
     border: 2px solid #08bff8;
 }
 
-/* Project Showcase */
 .project-showcase {
     padding-top: 20px;
     width: 100%;
@@ -236,7 +235,6 @@ a i {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Header Section */
 .project-header {
     border-radius: 20px;
     background: rgba(22, 75, 131, 0.3);
@@ -267,7 +265,6 @@ a i {
     font-size: 20px;
 }
 
-/* Project Images */
 .project-images {
     display: flex;
     justify-content: center;
@@ -292,7 +289,6 @@ a i {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Visibility */
 .content-section {
     display: none;
     animation: fadeIn 0.5s ease-in-out;
@@ -306,7 +302,7 @@ a i {
 }
 
 .ceritificate img{
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -317,10 +313,9 @@ a i {
 }
 
 #project-content {
-    display: block; /* Show projects by default */
+    display: block;
 }
 
-/* Skills Card Layout */
 .skills-card {
     display: flex;
     flex-direction: column;
@@ -352,7 +347,6 @@ a i {
     height: 80px;
 }
 
-/* Gallery Section */
 .gallery {
     padding: 20px 0 50px 0;
     text-align: center;
@@ -376,14 +370,14 @@ a i {
 }
 
 .gallery-images img {
-    width: 200px; /* Adjust size as needed */
+    width: 200px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
 .gallery-images img:hover {
-    transform: scale(1.05); /* Smooth hover effect */
+    transform: scale(1.05);
 }
 
 .lightbox {
@@ -489,7 +483,6 @@ a i {
     gap: 15px;
 }
 
-/* Form */
 .contact-form {
     margin-top: 20px;
 }
@@ -529,7 +522,6 @@ a i {
     background: #e68900;
 }
 
-/* Confirmation Message */
 .hidden {
     display: none;
 }
@@ -615,11 +607,10 @@ button:hover {
     animation: bounce 0.5s ease-in-out;
 }
 
-/* Slide Up Animation When Clicking Font Page */
 .font-page.slide-up {
     animation: slideUpPage 1s forwards;
 }
 
 .main-portfolio.slide-up {
-    animation: slideUpPage 1s forwards; /* Use the same animation as the font page */
+    animation: slideUpPage 1s forwards;
 }
