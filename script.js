@@ -41,34 +41,9 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     submitForm(event);
 });
 
-function submitForm(event) {
-    const name = document.querySelector("#name").value;
-    const email = document.querySelector("#email").value;
-    const message = document.querySelector("#message").value;
-
-    fetch('/submit-form', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            document.querySelector("#confirmationMessage").classList.remove("hidden");
-            document.getElementById("contactForm").reset();
-            setTimeout(() => {
-                document.getElementById("confirmationMessage").classList.add("hidden");
-            }, 3000);
-        }
-    })
-    .catch(error => console.error('Error:', error));
-}
-
 document.querySelector(".font-page").addEventListener("click", function() {
     this.classList.add("slide-up");
-    document.querySelector(".main-portfolio").classList.add("slide-up"); // Add slide-up class to navbar
+    document.querySelector(".main-portfolio").classList.add("slide-up");
 });
 
 const titles = ["Web Developer", "Software Engineer", "Frontend Developer", "Backend Developer", "Full Stack Developer"];
@@ -109,27 +84,19 @@ function removeAndRewriteText() {
 removeAndRewriteText();
 
 function showSection(sectionId) {
-    // Hide all sections
     document.querySelectorAll(".content-section").forEach(section => {
         section.style.display = "none";
     });
 
-    // Show the selected section
     document.getElementById(sectionId).style.display = "block";
 }
 
-
-
-
-
-
 document.querySelector(".nav-link ul li a[href='#home']").addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent default anchor click behavior
-    document.querySelector(".font-page").classList.add("slide-up"); // Slide up the welcome section
-    document.querySelector(".main-portfolio").classList.add("slide-up"); // Slide up the navbar
+    event.preventDefault();
+    document.querySelector(".font-page").classList.add("slide-up");
+    document.querySelector(".main-portfolio").classList.add("slide-up");
 
-    // Wait for the animation to finish before scrolling to the home section
     setTimeout(() => {
         document.getElementById("home").scrollIntoView({ behavior: 'smooth' });
-    }, 1000); // Adjust the timeout to match the duration of your slide-up animation
+    }, 1000);
 });
