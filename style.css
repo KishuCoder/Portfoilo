@@ -614,3 +614,40 @@ button:hover {
 .main-portfolio.slide-up {
     animation: slideUpPage 1s forwards;
 }
+
+@media (max-width: 768px) {
+    .body-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .profile img {
+        max-width: 200px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-list {
+        width: 100%;
+    }
+
+    .project-images a {
+        max-width: 100%;
+    }
+
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
